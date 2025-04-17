@@ -8,4 +8,6 @@
     <strong>Photo:</strong>
     <%= like.photo_id %>
   </p>
+
+  <%= button_to "Unlike", like_path(like), method: :delete, remote: true, class: "btn btn-outline-danger btn-sm" %>
 </div>
