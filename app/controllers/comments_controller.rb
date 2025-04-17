@@ -9,6 +9,9 @@ class CommentsController < ApplicationController
 
   # GET /comments/1/edit
   def edit
+    respond_to do |format|
+      format.html
+      format.js
   end
 
   # POST /comments or /comments.json
